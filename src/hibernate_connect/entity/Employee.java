@@ -1,15 +1,13 @@
 package hibernate_connect.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
-@Entity
-@Table(name = "employees")
+@Entity  //говорит о том, что Employee отобразиться в базе данных
+@Table(name = "employees")  // к какой именно таблице привязываем класс
 public class Employee {
-    @Id
-    @Column(name = "id")
+    @Id   // Primary Key
+    @GeneratedValue(strategy = GenerationType.IDENTITY)   //правило формирования Primary Key
+    @Column(name = "id")  // Как называется столбец в таблице
     private int id;
     @Column(name = "name")
     private String name;
@@ -20,7 +18,7 @@ public class Employee {
     @Column(name = "salary")
     private int salary;
 
-    public Employee() {
+    public Employee() {   //обязательно надо создать конструктор с аргументами
     }
 
     public Employee(String name, String surName, String department, int salary) {
