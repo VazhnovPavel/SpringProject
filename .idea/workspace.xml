@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0b5e880-0087-4358-a576-5b46dde315a9" name="Changes" comment="добавляем подключение базы данных через hibernate">
+    <list default="true" id="a0b5e880-0087-4358-a576-5b46dde315a9" name="Changes" comment="Получаем оббъекты из mySQL в Java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hibernate_connect/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_connect/entity/Employee.java" afterDir="false" />
     </list>
@@ -138,7 +138,7 @@
       <workItem from="1671697428133" duration="2409000" />
       <workItem from="1671831627392" duration="90000" />
       <workItem from="1671957752960" duration="3324000" />
-      <workItem from="1672000190320" duration="3314000" />
+      <workItem from="1672000190320" duration="4227000" />
     </task>
     <task id="LOCAL-00001" summary="добавляем подключение базы данных через hibernate">
       <created>1671699716418</created>
@@ -154,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671699755434</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Получаем оббъекты из mySQL в Java">
+      <created>1672048551565</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672048551565</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +180,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="добавляем подключение базы данных через hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавляем подключение базы данных через hibernate" />
+    <MESSAGE value="Получаем оббъекты из mySQL в Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Получаем оббъекты из mySQL в Java" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
