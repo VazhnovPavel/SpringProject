@@ -19,9 +19,10 @@ public class Test4 {
             session.beginTransaction();  //начинаем транзакцию
 
             /*Employee emp = session.get(Employee.class,1);             // id работника 1
-            emp.setSalary(1000);      */                                // поменяли зарплату
+            emp.setSalary(1000);                                      // поменяли зарплату*/
 
-            session.createQuery("update Employee set salary = 1000 where first_name = 'Maksim'");
+            session.createQuery("update Employee set salary = 2000 where name = 'Maksim'")
+                            .executeUpdate();                       //поменяли зарплату всем Максимам
             session.getTransaction().commit();  // конец транзакции
 
         }

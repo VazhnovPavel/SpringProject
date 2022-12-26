@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a0b5e880-0087-4358-a576-5b46dde315a9" name="Changes" comment="Получаем оббъекты из mySQL в Java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate_connect/entity/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_connect/entity/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate_connect/entity/Test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_connect/entity/Test4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate_connect/entity/Test4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate_connect/entity/Test4.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +62,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hibernate_test_2.entity" />
       <recent name="hibernate_connect.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test4">
+  <component name="RunManager" selected="Application.Test5">
     <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hibernate_connect.entity.Test1" />
       <module name="spring_course" />
@@ -87,8 +93,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hibernate_connect.entity.Test3" />
+    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_connect.entity.Test4" />
       <module name="spring_course" />
       <extension name="coverage">
         <pattern>
@@ -100,8 +106,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hibernate_connect.entity.Test4" />
+    <configuration name="Test5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_connect.entity.Test5" />
       <module name="spring_course" />
       <extension name="coverage">
         <pattern>
@@ -128,10 +134,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test5" />
         <item itemvalue="Application.Test4" />
-        <item itemvalue="Application.Test3" />
-        <item itemvalue="Application.hibernate_connect.entity.Test2" />
         <item itemvalue="Application.Test1" />
+        <item itemvalue="Application.hibernate_connect.entity.Test2" />
         <item itemvalue="Application.Test2" />
       </list>
     </recent_temporary>
@@ -153,6 +159,8 @@
       <workItem from="1671957752960" duration="3324000" />
       <workItem from="1672000190320" duration="5049000" />
       <workItem from="1672050102906" duration="366000" />
+      <workItem from="1672051499510" duration="604000" />
+      <workItem from="1672052534144" duration="3995000" />
     </task>
     <task id="LOCAL-00001" summary="добавляем подключение базы данных через hibernate">
       <created>1671699716418</created>
