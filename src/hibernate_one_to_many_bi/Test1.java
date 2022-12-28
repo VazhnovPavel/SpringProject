@@ -1,8 +1,9 @@
 package hibernate_one_to_many_bi;
 
 
-import hibernate_one_to_one.entity.Detail;
-import hibernate_one_to_one.entity.Employee;
+
+import hibernate_one_to_many_bi.entity.Department;
+import hibernate_one_to_many_bi.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -12,47 +13,49 @@ public class Test1 {
         SessionFactory factory = new Configuration()        //создаем сесию
                 .configure("hibernate.cfg.xml")    //говорим, как создавать сессию
                 .addAnnotatedClass(Employee.class)          //класс, в котором есть аннотации для работы с базой
-                .addAnnotatedClass(Detail.class)
+                .addAnnotatedClass(Department.class)
                 .buildSessionFactory();                     //строит саму сессию
         Session session = null;
         try {
-            /*Session session = factory.getCurrentSession();
-            Employee employee = new Employee("Maksim","Titov","Photo",20000);
-            Detail detail = new Detail("Moscow","123456", "Titov@gmail.com");
-            employee.setEmpDetail(detail);
-            session.beginTransaction();  //начинаем транзакцию
-            session.save(employee);      //сохранили все данные
-            session.getTransaction().commit();      //закрываем сесию
-*/
 
-           /* Session session = factory.getCurrentSession();
-            Employee employee = new Employee("Pavel","Vazhnov","Java",40000);
-            Detail detail = new Detail("Istambul","654321", "Vazhnov@gmail.com");
-            employee.setEmpDetail(detail);
+           /* session = factory.getCurrentSession();
+            Department dep = new Department("IT",300,1200);
+            Employee emp1 = new Employee("Pavel","Vazhnov",800);
+            Employee emp2 = new Employee("Nastya","Vazhnova",1000);
+            dep.addEmployeeToDepartment(emp1);
+            dep.addEmployeeToDepartment(emp2);
             session.beginTransaction();  //начинаем транзакцию
-            session.save(employee);      //сохранили все данные
+            session.save(dep);
             session.getTransaction().commit();      //закрываем сесию*/
 
-        /*    session = factory.getCurrentSession();
+            /*session = factory.getCurrentSession();
             session.beginTransaction();  //начинаем транзакцию
-            Employee emp = session.get(Employee.class,2);
-            System.out.println();
-            System.out.println(emp.getEmpDetail());
-            System.out.println();*/
+            Department department = session.get(Department.class,1);
+            System.out.println(department);
+            System.out.println(department.getEmps());*/
 
+           /* session = factory.getCurrentSession();
+            session.beginTransaction();  //начинаем транзакцию
+            Employee employee = session.get(Employee.class,1);
+            System.out.println(employee);
+            System.out.println(employee.getDepartment());*/
+///
             session = factory.getCurrentSession();
             session.beginTransaction();  //начинаем транзакцию
-            Employee emp = session.get(Employee.class,2);
-            session.delete(emp);
+            Employee employee = session.get(Employee.class,6);
+            session.delete(employee);
+
+
+            session.getTransaction().commit();      //закрываем сесию
+
+
+
+
+
+
             System.out.println();
             System.out.println("Суксес!");
             System.out.println();
-
-
-
-
-
-            session.getTransaction().commit();      //закрываем сесию
 
         }
         finally {

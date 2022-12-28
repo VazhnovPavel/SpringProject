@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0b5e880-0087-4358-a576-5b46dde315a9" name="Changes" comment="Добавили связь между employees и detail">
-      <change afterPath="$PROJECT_DIR$/src/hibernate_one_to_one/Test1.java" afterDir="false" />
+    <list default="true" id="a0b5e880-0087-4358-a576-5b46dde315a9" name="Changes" comment="Закончил работу с типо one to one">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate_connect/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_connect/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate_test_2/entity/Detail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_one_to_one/entity/Detail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate_test_2/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_one_to_one/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate_test_2/entity/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate_one_to_many_bi/entity/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate_connect/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate_connect/entity/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate_connect/entity/Test2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate_connect/entity/Test2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate_test_2/entity/Detail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate_test_2/entity/Detail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate_test_2/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate_test_2/entity/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate_test_2/entity/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate_test_2/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate_test_2/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate_test_2/entity/Detail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate_test_2/entity/Employee.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,18 +65,19 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="hibernate_one_to_many_bi" />
+      <recent name="hibernate_one_to_many_bi.entity" />
       <recent name="hibernate_test_2" />
       <recent name="hibernate_test_2.entity" />
       <recent name="hibernate_connect.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.hibernate_one_to_one.Test2">
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hibernate_one_to_one.Test2" />
+  <component name="RunManager" selected="Application.Test1">
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_one_to_many_bi.Test1" />
       <module name="spring_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hibernate_one_to_one.*" />
+          <option name="PATTERN" value="hibernate_one_to_many_bi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hibernate_connect.entity.Test4" />
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernate_one_to_one.Test2" />
       <module name="spring_course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hibernate_connect.entity.*" />
+          <option name="PATTERN" value="hibernate_one_to_one.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test1" />
         <item itemvalue="Application.hibernate_one_to_one.Test2" />
         <item itemvalue="Application.hibernate_one_to_one.Test1" />
         <item itemvalue="Application.hibernate_test_2.entity.Test1" />
         <item itemvalue="Application.Test5" />
-        <item itemvalue="Application.Test4" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +166,7 @@
       <workItem from="1672050102906" duration="366000" />
       <workItem from="1672051499510" duration="604000" />
       <workItem from="1672052534144" duration="4817000" />
-      <workItem from="1672088140935" duration="11134000" />
+      <workItem from="1672088140935" duration="14253000" />
     </task>
     <task id="LOCAL-00001" summary="добавляем подключение базы данных через hibernate">
       <created>1671699716418</created>
@@ -220,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672058202012</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Закончил работу с типо one to one">
+      <created>1672223655787</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672223655787</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Закончил работу с типо one to one">
+      <created>1672223684215</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672223684215</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +252,8 @@
     <MESSAGE value="добавляем подключение базы данных через hibernate" />
     <MESSAGE value="Получаем оббъекты из mySQL в Java" />
     <MESSAGE value="Добавили связь между employees и detail" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавили связь между employees и detail" />
+    <MESSAGE value="Закончил работу с типо one to one" />
+    <option name="LAST_COMMIT_MESSAGE" value="Закончил работу с типо one to one" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

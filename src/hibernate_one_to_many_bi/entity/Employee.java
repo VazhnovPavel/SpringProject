@@ -15,43 +15,21 @@ public class Employee {
     private String name;
     @Column(name = "surName")
     private String surName;
-    @Column(name = "department")
-    private String department;
     @Column(name = "salary")
     private int salary;
 
-    @OneToOne(cascade = CascadeType.ALL)     // отношение один к одному,если удалить работника -его details тоже удалить
-    @JoinColumn(name = "details_id")        // для связи используем столбец из таблицы Employee details_id
-    private Detail empDetail;               //таблица Employee знает о таблице Detail
+    @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.PERSIST,
+            CascadeType.REFRESH,CascadeType.MERGE})
+    @JoinColumn(name = "department_id")
+    private Department department;
 
-
-    public Employee() {   //обязательно надо создать конструктор с аргументами
+    public Employee() {
     }
 
-    public Employee(String name, String surName, String department, int salary) {
+    public Employee(String name, String surName, int salary) {
         this.name = name;
         this.surName = surName;
-        this.department = department;
         this.salary = salary;
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", surName='" + surName + '\'' +
-                ", department='" + department + '\'' +
-                ", salary=" + salary +
-                '}';
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -70,14 +48,6 @@ public class Employee {
         this.surName = surName;
     }
 
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
     public int getSalary() {
         return salary;
     }
@@ -86,11 +56,30 @@ public class Employee {
         this.salary = salary;
     }
 
-    public Detail getEmpDetail() {
-        return empDetail;
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setEmpDetail(Detail empDetail) {
-        this.empDetail = empDetail;
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surName='" + surName + '\'' +
+                ", salary=" + salary +
+                ", department=" + department +
+                '}';
     }
 }
