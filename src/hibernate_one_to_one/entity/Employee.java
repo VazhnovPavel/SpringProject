@@ -1,4 +1,4 @@
-package hibernate_test_2.entity;
+package hibernate_one_to_one.entity;
 
 import javax.persistence.*;
 
@@ -82,5 +82,13 @@ public class Employee {
 
     public void setSalary(int salary) {
         this.salary = salary;
+    }
+
+    public Detail getEmpDetail() {
+        return empDetail;
+    }
+
+    public void setEmpDetail(Detail empDetail) {
+        this.empDetail = empDetail;
     }
 }

@@ -1,4 +1,4 @@
-package hibernate_test_2.entity;
+package hibernate_one_to_one.entity;
 
 import javax.persistence.*;
 
@@ -8,13 +8,18 @@ public class Detail {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private String id;
+    private int id;
     @Column(name = "city")
     private String city;
     @Column(name = "phone_number")
     private String phoneNumber;
     @Column(name = "email")
     private  String email;
+
+
+    @OneToOne(mappedBy = "empDetail",cascade = {CascadeType.PERSIST,
+            CascadeType.REFRESH})   // показываем, где эта связь уже прописана
+    private Employee employee;
 
     public Detail() {
     }
@@ -25,11 +30,11 @@ public class Detail {
         this.email = email;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -56,7 +61,13 @@ public class Detail {
     public void setEmail(String email) {
         this.email = email;
     }
+    public Employee getEmployee() {
+        return employee;
+    }
 
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
     @Override
     public String toString() {
         return "Detail{" +
